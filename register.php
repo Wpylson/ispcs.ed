@@ -102,7 +102,7 @@ if(isset($_POST['submit'])){
                 <a class="small" href="login.php">Já tens uma conta? Entar!</a>
               </div>
               <div class="text-center">
-                    <a href="http://www.espb.edu.ao">www.espb.edu.ao</a>
+              <a href="http://www.ispcs.ao">www.ispcs.ao</a>
                   </div>
             </div>
           </div>

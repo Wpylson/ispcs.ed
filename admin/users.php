@@ -80,7 +80,7 @@ include_once("common/restriction.php");
                 </div>
             </li>
 
-           
+
 
 
 
@@ -108,7 +108,7 @@ include_once("common/restriction.php");
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <p><strong>Escola Superior Pedagógica do Bengo</strong> - <a href="http://www.espb.edu.ao">www.espb.edu.ao</a></p>
+                    <p><strong>Instituto Superior Politécnico Do Cuanza Sul</strong> - <a href="http://www.ispcs.ao">www.ispcs.ao</a></p>
                     <ul class="navbar-nav ml-auto">
 
                         <div class="topbar-divider d-none d-sm-block"></div>
@@ -183,8 +183,8 @@ include_once("common/restriction.php");
                                                 <td><?php echo $data['first_name'] ?></td>
                                                 <td><?php echo $data['last_name'] ?></td>
                                                 <td><?php echo $data['user_email'] ?></td>
-                                                <td><?php echo $data['date_register'] ?></td>
-                                                <td> <a href="#" class="btn btn-danger btn-circle btn-sm" >
+                                                <td><?php echo $data['create_time'] ?></td>
+                                                <td> <a href="#" class="btn btn-danger btn-circle btn-sm">
                                                         <i class="fas fa-trash"></i>
                                                     </a>
                                                     <a href="#" class="btn btn-primary btn-circle btn-sm">
@@ -210,13 +210,9 @@ include_once("common/restriction.php");
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; ESPB 2023</span>
-                    </div>
-                </div>
-            </footer>
+            <?php
+            include_once("common/footer.php");
+            ?>
             <!-- End of Footer -->
 
         </div>

@@ -12,7 +12,7 @@ include_once("common/restriction.php");
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>ESPB - Dashboard</title>
+  <title>ISPC - Dashboard</title>
 
   <!-- Custom fonts for this template-->
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -110,7 +110,7 @@ include_once("common/restriction.php");
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
-          <p><strong>Escola Superior Pedagógica do Bengo</strong> - <a href="http://www.espb.edu.ao">www.espb.edu.ao</a></p>
+          <p><strong>Instituto Superior Politécnico Do Cuanza Sul</strong> - <a href="http://www.ispcs.ao">www.ispcs.ao</a></p>
           <ul class="navbar-nav ml-auto">
 
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -324,13 +324,9 @@ include_once("common/restriction.php");
       <!-- End of Main Content -->
 
       <!-- Footer -->
-      <footer class="sticky-footer bg-white">
-        <div class="container my-auto">
-          <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2019</span>
-          </div>
-        </div>
-      </footer>
+      <?php 
+        include_once("common/footer.php");
+      ?>
       <!-- End of Footer -->
 
     </div>

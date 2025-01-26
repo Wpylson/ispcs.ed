@@ -19,8 +19,8 @@ class User extends Conexao
             header("Location: register.php?msgp=pass");
         } else {
             $query = "INSERT INTO `tbl_users`(
-                `first_name`, `last_name`,`user_email`, `password`,`user_level`
-            ) VALUES('$name','$last_name','$email','$password','2')
+                `first_name`, `last_name`,`user_email`, `pass_word`,`user_level`
+            ) VALUES('$name','$last_name','$email','$password','2', NOW())
             ";
             $sql = $this->conexao->query($query);
             if ($sql == true) {
@@ -35,7 +35,7 @@ class User extends Conexao
     {
         $email = $this->conexao->real_escape_string($_POST['email']);
         $password = $this->conexao->real_escape_string($_POST['password']);
-        $query = "SELECT * FROM tbl_users WHERE user_email='$email' and password='$password' limit 1";
+        $query = "SELECT * FROM tbl_users WHERE user_email='$email' and pass_word='$password' limit 1";
         $result = $this->conexao->query($query);
         if ($result->num_rows > 0) {
             $rows = $result->fetch_assoc();

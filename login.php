@@ -81,7 +81,7 @@ if(isset($_POST["submit"])){
                       </div>
                     </div>
                     <input type="submit" name="submit"  value="Entrar" class="btn btn-primary btn-user btn-block">
-                    <hr>
+                    
 
                   </form>
                   <hr>
@@ -92,7 +92,7 @@ if(isset($_POST["submit"])){
                     <a class="small" href="register.php">Criar uma conta!</a>
                   </div>
                   <div class="text-center">
-                    <a href="http://www.espb.edu.ao">www.espb.edu.ao</a>
+                    <a href="http://www.ispcs.ao">www.ispcs.ao</a>
                   </div>
                   
                 </div>

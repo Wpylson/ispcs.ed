@@ -172,7 +172,7 @@ if (isset($_POST['submit'])) {
                                             </div>
                                             <div class="col-sm-6">
                                                 <span>Data de Nascimento</span>
-                                                <input type="date"  class="form-control form-control-user" id="exampleLastName" name="birth_date" required>
+                                                <input type="date" class="form-control form-control-user" id="exampleLastName" name="birth_date" required>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -204,9 +204,9 @@ if (isset($_POST['submit'])) {
                                             <span>Motivação</span>
                                             <textarea class="form-control " name="motivation" id="" cols="10" rows="5" placeholder="Em pouscas frases diz-nos qual é a tua motivação para fazeres parte da família ESPB."></textarea>
                                         </div>
-                                        <input type="hidden" name="user" value="<?php echo $userData['idUsers']; ?>">
+                                        <input type="hidden" name="user" value="<?php echo $userData['idUser']; ?>"
                                         <input type="submit" name="submit" value="Candidatar-me" class="btn btn-primary btn-user btn-block">
-                                        
+
 
                                     </form>
 
@@ -223,13 +223,9 @@ if (isset($_POST['submit'])) {
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; ESPB 2023</span>
-                    </div>
-                </div>
-            </footer>
+            <?php
+            include_once("common/footer.php");
+            ?>
             <!-- End of Footer -->
 
         </div>
